@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeyourBMW-Buy</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="temp.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logofinal.png" alt="car_logo">
+            <p>MakeYourBMW</p>
+        </div>
+        <ul>
+            <li class="options"><a href="kinghome.html">Home</a></li>
+            <li class="options"><a href="">Models</a></li>
+            <li class="options"><a href="#">Used Cars</a></li>
+            <li class="options"><a href="#">About us</a></li>
+            <li class="options"><a href="#">Contact us</a></li>
+
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="Series 2 Model 220i.jpg" alt="Series 2 Model 220i">
+            </div>
+            <div class="item">
+                <img src="Series 7 Model 740Li.jpg" alt="Series 7 Model 740Li">
+            </div>
+            <div class="item">
+                <img src="Series i model ix.jpg" alt="Series i model ix">
+            </div>
+            <div class="item">
+                <img src="Series m Model M2.jpg" alt="Series m Model M2">
+            </div>
+            <div class="item">
+                <img src="Series x Model X1.jpg" alt="Series x Model X1">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"></button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <div class="selection">
+        <div class="container">
+            <div id="title">
+                <button onclick="show()" id="h1" >All Models</button>
+            </div>
+            <div class="firstPart">
+                <ul>
+                    <li>
+                        <button onclick="showModel1()" class="firstTab"><strong>X</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel2()" class="firstTab"><strong>M</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel3()" class="firstTab"><strong>i</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel4()" class="firstTab"><strong>2</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel5()" class="firstTab"><strong>7</strong></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="All_models">
+                <div class="models" id="series1">
+                    <h2 id="model_heading">X</h2>
+                    <div class="model_details">
+                        <div class="model_info">
+                            <img src="Series_X_Model_X1.png" alt="Series_X_Model_X1" class="model_images">
+                            <h3>BMW X1</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_X_Model_X3.png" alt="Series_X_Model_X3" class="model_images">
+                            <h3>BMW X3</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_X_Model_X5.png" alt="Series_X_Model_X5" class="model_images">
+                            <h3>BMW X5</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_X_Model_X7.png" alt="Series_X_Model_X7" class="model_images">
+                            <h3>BMW X7</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series2">
+                    <h2 id="model_heading">M</h2>
+                    <div class="model_details">
+                        <div class="model_info">
+                            <img src="Series_m_Model_m2.png" alt="Series_m_Model_m2" class="model_images">
+                            <h3>BMW M2</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_m_Model_m4.png" alt="Series_m_Model_m4" class="model_images">
+                            <h3>BMW M4</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_m_Model_m8.png" alt="Series_m_Model_m8" class="model_images">
+                            <h3>BMW M8</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series3">
+                    <h2 id="model_heading">i</h2>
+                    <div class="model_details">
+                        <div class="model_info">
+                            <img src="Series_i_Model_i4.png" alt="Series_i_Model_i4" class="model_images">
+                            <h3>BMW i4</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_i_Model_i7.png" alt="Series_i_Model_i7" class="model_images">
+                            <h3>BMW i7</h3>
+                        </div>
+                        <div class="model_info">
+                            <img src="Series_i_Model_ix.png" alt="Series_i_Model_ix" class="model_images">
+                            <h3>BMW ix</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series4">
+                    <h2 id="model_heading">2</h2>
+                    <div class="model_details">
+                        <div class="model_info">
+                            <img src="Series_2_Model_220d.png" alt="Series_2_Model_220d" class="model_images">
+                            <h3>BMW 220d</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series5">
+                    <h2 id="model_heading">7</h2>
+                    <div class="model_details">
+                        <div class="model_info">
+                            <img src="Series_7_Model_740Li.png" alt="Series_7_Model_740Li" class="model_images">
+                            <h3>BMW 740Li</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_details">
+                <div class="footer_contactUs">
+                    <h4 class="footer_headings">
+                        Contact Us
+                    </h4>
+                    <ul class="footer_lists_options">
+                        <li class="footer_contact_list">
+                            <a href="#">
+                                <strong>
+                                    Find a Dealer
+                                </strong>
+                            </a>
+                        </li>
+                        <li class="footer_contact_list">
+                            <a href="#">
+                                <strong>
+                                    Request a test drive
+                                </strong>
+                            </a>
+                        </li>
+                        <li class="footer_contact_list">
+                            <a href="#">
+                                <strong>
+                                    Contact Us
+                                </strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_quickLinks">
+                    <h4 class="footer_headings">
+                        Quick Links
+                    </h4>
+                    <ul class="footer_lists_options">
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© MakeYourBMW</p>
+        </div>
+        <div class="social_media">
+            <ul id="social_list">
+                <li style=" list-style: none;">
+                    <img src="logo-instagram.png" alt="insta logo" id="insta">
+                    <img src="facebook-logo.png" alt="facebook logo" id='insta'>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- <script src="buytab.js"></script> -->
+    <script>
+       let slider = document.querySelector('.slider .list');
+       let items = document.querySelectorAll('.slider .list .item');
+       let next = document.getElementById('next');
+       let prev = document.getElementById('prev');
+       let dots = document.querySelectorAll('.slider .dots li');
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function(){
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+let refreshInterval = setInterval(()=> {next.click()}, 7000);
+function reloadSlider(){
+    slider.style.left = -items[active].offsetLeft + 'px';
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=> {next.click()}, 7000);
+
+    
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
+    })
+})
+window.onresize = function(event) {
+    reloadSlider();
+};
+        let series1 = document.getElementById("series1");
+        let series2 = document.getElementById("series2");
+        let series3 = document.getElementById("series3");
+        let series4 = document.getElementById("series4");
+        let series5 = document.getElementById("series5");
+
+        function showModel1() {
+            series1.style.display = 'block';
+            series2.style.display = 'none';
+            series3.style.display = 'none';
+            series4.style.display = 'none';
+            series5.style.display = 'none';
+
+
+        }
+        function showModel2() {
+            series1.style.display = 'none';
+            series2.style.display = 'block';
+            series3.style.display = 'none';
+            series4.style.display = 'none';
+            series5.style.display = 'none';
+        }
+
+
+        function showModel3() {
+            series1.style.display = 'none';
+            series2.style.display = 'none';
+            series3.style.display = 'block';
+            series4.style.display = 'none';
+            series5.style.display = 'none';
+        }
+
+        function showModel4() {
+            series1.style.display = 'none';
+            series2.style.display = 'none';
+            series3.style.display = 'none';
+            series4.style.display = 'block';
+            series5.style.display = 'none';
+        }
+
+        function showModel5() {
+            series1.style.display = 'none';
+            series2.style.display = 'none';
+            series3.style.display = 'none';
+            series4.style.display = 'none';
+            series5.style.display = 'block';
+        }
+        function show()
+        {
+            series1.style.display = 'block';
+            series2.style.display = 'block';
+            series3.style.display = 'block';
+            series4.style.display = 'block';
+            series5.style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
