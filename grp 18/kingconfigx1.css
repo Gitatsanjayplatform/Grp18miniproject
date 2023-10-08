@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+.navbar
+{
+    height: 87px;
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+}
+.navbar_container
+{
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    width: 100%;
+    height: 100%;
+}
+.change_model_link_div
+{
+    width: 7%;
+}
+.change_model_link
+{
+    text-decoration: none;
+    font-size: 23px;
+    color: gray;
+}
+.change_model_link:hover
+{
+    color: black;
+}
+.navbar_options_container
+{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+}
+.navbar_line_seperator
+{
+    background-color: #e6e6e6;
+    width: 1px;
+    height: 40px;
+    margin: 0px 20px;
+    display: flex;
+}
+.navbar_options
+{
+    width: 67%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    margin-right: 140px;
+}
+.navbar_options ul
+{
+    display: flex;
+    list-style: none;
+}
+.navbar_buttons
+{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    width: auto;
+    padding: 0px 20px;
+    /* width: 6%; */
+}
+.navbar_options ul li
+{
+    position: relative;
+    display: block;
+}
+.navbar_options ul li::before{
+    position: absolute;
+    content: '';
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    
+}
+.navbar_options ul li:hover
+{
+    background-position: 0;
+}
+.navbar_options ul li:hover::before
+{
+    width: 100%;
+}
+.navbar_buttons
+{
+    color: gray;
+    font-size: 23px;
+    /* height: 20px; */
+}
+.navbar_options_buttons:hover{
+    color: black;
+}
+.summary_button
+{
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    width: 10%;
+}
+.summary_button:hover
+{
+    background-color: rgb(53, 53, 53);
+}
+.summary_button span
+{
+    color: white;
+    font-size: 20px;
+}
+.extra_container
+{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo
+{
+    height: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 6px;
+}
+.logo img
+{
+    height: 90%;
+    width: 90%;
+}
+.logo p
+{
+   position: relative;
+   bottom: 10px;
+}
+.info_container
+{
+    margin-left: 1139px;
+    height: auto;
+}
+.arrow button
+{
+    position: absolute;
+    top: 10;
+}
+.engine_container
+{
+    padding: 20px;
+    height: 450px;
+}
+.info_headings
+{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+}
+.engine_details
+{
+    padding: 20px;
+    border: 2px solid black;
+    height: 75%;
+}
+#engine_variant
+{
+    font-weight: 400;
+    font-size: 32px;
+}
+#engine_type
+{
+    display: inline-block;
+    background-color: rgb(200 205 203);
+    padding: 0px 4px;
+    text-align: center;
+    font-size: 17px;
+    /* margin-left: 11px; */
+}
+#price
+{
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    margin-top: 5px;
+}
+#engine_info_heading
+{
+    margin: 15px 0px;
+    font-size: 23px;
+    font-weight: 500;
+}
+#engine_info
+{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.engine_options
+{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#engine_down_button
+{
+    margin: 0px 15px;
+}
+#down_button
+{
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+#engine_option
+{
+    font-size: 20px;
+}
+.all_type_engines
+{
+    margin: 20px 0px;
+    text-align: center;
+    padding: 0px 20px;
+}
+#engines
+{
+    height: 41px;
+    width: 100%;
+    font-size: 21px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+#engines:hover
+{
+    background-color: rgb(53, 53, 53);
+}
+.Exterior_container
+{
+    padding: 20px;
+}
+.Exterior_details p
+{
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+}
+.rims_info p
+{
+    font-size: 15px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.Interior_container
+{
+    padding: 20px;
+}
+.config
+{
+    padding: 20px;
+}
+#CONFIGURATION
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#model_price
+{
+    margin: 20px 0px;
+}
+#model
+{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#price
+{
+    margin-bottom: 20px;
+
+}
+#price i
+{
+    font-weight: 200;
+    margin-left: 3px;
+}
+#Summary
+{
+    margin: 20px 0px;
+}
+#Summary a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.testdrive
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.testdrive button
+{
+    width: 80%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.testdrive button:hover
+{
+    background-color: rgb(53, 53, 53);
+}
+.lower_navbar
+{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+}
+.Model
+{
+    margin-left: 20px;
+    font-size: 23px;
+}
+#lower_summary
+{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    margin-left: 25%;
+}
+#lower_summary p
+{
+    margin-right: 20px;
+    font-size: 23px;
+
+}
+
+footer
+{
+    display: flex;
+    min-height: 90px;
+    width: 100%;
+    padding: 24px 48px;
+    border-top: 2px solid #bbb;
+    background-color: #e6e6e6;
+    align-items: center;
+}
+.footer_options
+{
+    position: absolute;
+    right: 50px;
+    
+}
+.footer_options ul
+{
+    display: flex;
+    list-style: none;
+    padding-top: 5px;
+}
+.footer_options ul li
+{
+    padding: 0px 15px;
+}
+.footer_options ul li a
+{
+    text-decoration: none;
+    color: #666;
+    font-size: 20px;
+}
+.footer_options ul li a:hover
+{
+    color: #333;
+}
+#copyright
+{
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}

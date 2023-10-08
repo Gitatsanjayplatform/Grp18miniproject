@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW X1</title>
+    <link rel="stylesheet" href="kingconfigx1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap" rel="stylesheet">
+<style>
+      * {box-sizing: border-box;}
+.modal {
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 50px;
+  width: 70%;
+  height: 60%;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+/* Modal Content */
+.modal img {
+  display: block;
+  margin: 0 auto;
+  width: 39%;
+  height: 52%;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* #animatedPhoto.stop-animation {
+    animation-play-state: paused;
+} */
+ img{
+    margin: 100px;
+    height: 30%;
+    width: 40%;
+    /* border: 2px solid black; */
+    /* Add any other common styles or animations here */
+}
+.header ul{
+    display: flex;
+    text-align: center;
+    height: 15px;
+}
+.header ul li{
+    
+    list-style: none;
+    padding: 0px 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.header li button{
+    font-size: 27px;
+    padding: 3px 3px;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+    border-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 70;
+    font-family: 'Teko', sans-serif;
+}
+.clickable-image1 {
+        cursor: pointer;
+      }
+.clickable-image2 {
+        cursor: pointer;
+      }
+</style>
+</head>
+<body>
+    <div>
+       <header>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <div class="change_model_link_div">
+                    <a href="#" class="change_model_link">
+                        Change model
+                    </a>
+                </div>
+                <div class="navbar_options_container">
+                    <div class="navbar_line_seperator"></div>
+                    <div class="navbar_options">
+                        <ul>
+                            <li>
+                                <button class="navbar_buttons navbar_options_buttons" onclick="scrollToDivengine()">
+                                    Engines
+                                </button>
+                            </li>
+                            <!-- <li>
+                                <button class="navbar_buttons navbar_options_buttons">
+                                    Model Variant
+                                </button>
+                            </li> -->
+                            <li>
+                                <button class="navbar_buttons navbar_options_buttons" onclick="scrollToDivexterior()">
+                                    Exterior
+                                </button>
+                            </li>
+                            <li>
+                                <button class="navbar_buttons navbar_options_buttons" onclick="scrollToDivinterior()">
+                                    Interior
+                                </button>
+                            </li>
+                            <li>
+                                <button id="360view" class="navbar_buttons navbar_options_buttons">
+                                    360°
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar_buttons summary_button">
+                        <span>Summary</span>                     
+                    </button>
+                    <div class="navbar_line_seperator"></div>
+                </div>
+                <div class="extra_container">
+                    <div class="logo">
+                        <img src="logobmw.png" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </nav>
+       </header>
+       
+        <div class="info_container">
+            <div class="arrow">
+                <button id="left_arrow">
+                 <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button id="right_arrow">
+                 <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+            <div class="engine_container">
+                <h3 class="info_headings">
+                    ENGINES
+                </h3>
+                <div class="engine_details">
+                    <h3 id="engine_variant">
+                        X1 sDrive18i M Sport
+                    </h3>
+                    <p id="engine_type">
+                        Petrol
+                    </p>
+                    <p id="price">
+                        From ₹48,90,000
+                    </p>
+                    <p id="engine_info_heading">
+                        Transmission
+                    </p>
+                    <p id="engine_info">
+                        7-speed Steptronic Sport transmission with double clutch
+                    </p>
+                    <div class="engine_options">
+                        <div id="engine_down_button">
+                            <button id="down_button">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div>
+                        <div id="engine_option">
+                            <p>
+                                Transmission & Technical Data
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_type_engines">
+                    <button id="engines">
+                        View all Engines
+                    </button>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="Exterior_container">
+                <div>
+                    <h3 class="info_headings">
+                        EXTERIOR
+                    </h3>
+                </div>
+                <div class="Exterior_details">
+                    <div class="Exterior_paint_details">
+                        <p>
+                            PAINT
+                        </p>
+                        <div class="Exterior_paint_list">
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            RIMS
+                        </p>
+                        <div class="rims_info">
+                            <p>
+                                For information about the tyre labelling, refer to the technical data on the vehicle-specific information page.
+                            </p>
+                        </div>
+                        <div>
+                            <img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="Interior_container">
+                <div>
+                    <h3 class="info_headings">
+                        INTERIOR
+                    </h3>
+                </div>
+                <div>
+                    <div class="Interior_details">
+                        <p>
+                            UPHOLSTERY
+                        </p>
+                        <div class="Upholstery_type">
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="config">
+                <div id="CONFIGURATION">
+                    <h3>
+                        YOUR CONFIGURATION IS READY!
+                    </h3>
+                </div>
+                <div id="model_price">
+                    <p id="model">
+                        X1 sDrive18i M Sport
+                    </p>
+                    <div id="price">
+                        <h3>₹48,90,000<i class="ri-information-line"></i></h3>
+                    </div>
+                </div>
+                <hr>
+                <div id="Summary">
+                    <a href="#">
+                        <i class="ri-file-2-line"></i>Summary
+                    </a>
+                </div>
+                <div class="testdrive">
+                    <a href="#">
+                        <button id="senddatabutton">
+                            Test Drive
+                        </button>
+                    </a>
+                </div>
+                <div class="testdrive">
+                    <button>
+                        Buy Online
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="lower_navbar">
+            <div class="Model">
+                <h3>
+                    X1 sDrive18i M Sport
+                </h3>
+            </div>
+            <div id="lower_summary">
+                <div id="lower_price">
+                    <p>
+                        ₹48,90,000<i class="ri-information-line"></i>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <footer>
+            <div id="copyright">
+                © Make Your BMW 2023
+            </div>
+            <div class="footer_options">
+                <ul>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Data Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <button id="mybutton"> &times;</button>
+        <!-- <img id="modal-image" src="SeriesiModeli7.png" alt="Image"> -->
+        
+        <div class="slideshow-container">
+      <div class="header">
+        <ul>
+        <li><button>Exterior</button></li>
+        <li><button onclick="showcolor1()">color 1</button></li>
+        <li><button onclick="showcolor2()">color 2</button></li>
+        <li><button></button></li>
+        </ul>
+      </div>
+    <br>
+    <hr>
+    <!-- <ul class="case">
+      <li>  -->
+    <div class="slideshow-container1">
+      <div class="mySlides1">
+          <img class="clickable-image1"  title ="tab to pause / resume" style="height: 20%;"  src="X1_view1.jpg" >
+        </div>
+        
+        <div class="mySlides1">
+          <img  class="clickable-image1" title ="Tab to pause / resume" src="X1_view2.jpg" >
+        </div>
+        
+        
+        <div class="mySlides1 ">
+            <img class="clickable-image1"  title ="Tab to pause / resume" style="padding: 0px 10px 30px 0px ;" src="X1_view3.jpg">
+          </div>
+          <div class="mySlides1">
+            <img  class="clickable-image1" title ="Tab to pause / resume" src="X1_view4.jpg" >
+          </div>
+          
+          <div class="mySlides1">
+            <img class="clickable-image1"  title ="Tab to pause / resume" src="X1_view5.jpg" >
+          </div>
+          
+          <div class="mySlides1">
+            <img class="clickable-image1"  title ="Tab to pause / resume" src="X1_view6.jpg" >
+          </div>
+          <div class="mySlides1">
+            <img  class="clickable-image1"title ="Tab to pause / resume"  style="padding: 0px 0px 35px 10px ;"src="X1_view7.jpg" >
+          </div>
+          
+          <div class="mySlides1">
+            <img class="clickable-image1" title ="Tab to pause / resume"  src="X1_view8.jpg" >
+          </div>
+          </div>
+      <!-- </li>
+      <li> -->
+      <div class="slideshow-container2">
+      <div class="mySlides2">
+          <img class="clickable-image2"  title ="tab to pause / resume" style="height: 20%;"  src="Series_2_Model_220d.png" >
+        </div>
+        
+        <div class="mySlides2">
+          <img  class="clickable-image2" title ="Tab to pause / resume" src="SeriesXModelX7.png" >
+        </div>
+        
+        
+        <div class="mySlides2 ">
+            <img class="clickable-image2"  title ="Tab to pause / resume" style="padding: 0px 10px 30px 0px ;" src="SeriesXModelX5.png">
+          </div>
+          <div class="mySlides2">
+            <img  class="clickable-image2" title ="Tab to pause / resume" src="SeriesModel220d.png" >
+          </div>
+          
+          <div class="mySlides2">
+            <img class="clickable-image2"  title ="Tab to pause / resume" src="SeriesmModelm8.png" >
+          </div>
+          
+          <div class="mySlides2">
+            <img class="clickable-image2"  title ="Tab to pause / resume" src="SeriesmModelm4.png" >
+          </div>
+          <div class="mySlides2">
+            <img  class="clickable-image2"title ="Tab to pause / resume"  style="padding: 0px 0px 35px 10px ;"src="Series_2_Model_220d.png" >
+          </div>
+          
+          <div class="mySlides2">
+            <img class="clickable-image2" title ="Tab to pause / resume"  src="X1_view8.jpg" >
+          </div>
+      </div>
+    <!-- </li>
+    </ul> -->
+          </div>
+    <script>
+         function scrollToDivengine() {
+        let engine_container = document.querySelector(".engine_container");
+        let offset = 100; // Set the desired offset (in pixels) from the top
+        let scrollToY = engine_container.getBoundingClientRect().top + window.scrollY - offset;
+        
+        window.scrollTo({
+            top: scrollToY,
+            behavior: "smooth"
+        });
+    }
+
+    function scrollToDivexterior() {
+        let Exterior_container = document.querySelector(".Exterior_container");
+        let offset = 100; // Set the desired offset (in pixels) from the top
+        let scrollToY = Exterior_container.getBoundingClientRect().top + window.scrollY - offset;
+        
+        window.scrollTo({
+            top: scrollToY,
+            behavior: "smooth"
+        });
+    }
+    function scrollToDivinterior() {
+        let Interior_container = document.querySelector(".Interior_container");
+        let offset = 100; // Set the desired offset (in pixels) from the top
+        let scrollToY = Interior_container.getBoundingClientRect().top + window.scrollY - offset;
+        
+        window.scrollTo({
+            top: scrollToY,
+            behavior: "smooth"
+        });
+    }
+
+    document.getElementById("senddatabutton").addEventListener("click", function() {
+    // Data to be sent
+    const dataToSend = {
+        selectedOption:"The BMW X1",      
+    };
+
+    // Convert the data to a query string
+    const queryString = Object.keys(dataToSend).map(key => key + '=' + dataToSend[key]).join('&');
+
+    // Navigate to the second page with the data as query parameters
+    window.location.href = "king.html?" + queryString;
+});
+
+
+
+//        ************************************modal***************************************
+// Get references to the modal and trigger image
+const modal = document.querySelector(".modal");
+        const triggerImage = document.getElementById("360view");
+        const closeButton = document.querySelector("#mybutton");
+        
+        
+        // Function to open the modal
+        function openModal() {
+          modal.style.display = "block";
+        } 
+        // Function to close the modal
+        function closeModal() {
+          modal.style.display = "none";
+        }
+        // Event listeners to open and close the modal
+        triggerImage.addEventListener("click", openModal);
+        closeButton.addEventListener("click", closeModal);
+        
+        
+        let slideIndex1 = 0;
+        let timer1; // Declare a variable for the timer
+        let paused1 = false; // Variable to track if the slideshow is paused
+             let slideIndex2 = 0;
+        let timer2; // Declare a variable for the timer
+        let paused2 = false; // Variable to track if the slideshow is paused
+
+        function showSlides1() {
+  let i;
+  const slides1 = document.getElementsByClassName("mySlides1");
+
+  for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";  
+    }
+    slideIndex1++;
+    if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+    slides1[slideIndex1-1].style.display = "block";  
+    timer1 = setTimeout(showSlides1, 1500); // Store the timer
+}
+function showSlides2(){
+  let i;
+  const slides2 = document.getElementsByClassName("mySlides2");
+
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";  
+    }
+    slideIndex2++;
+    if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+    slides2[slideIndex2-1].style.display = "block";  
+    timer2 = setTimeout(showSlides2, 1500); // Store the timer
+}
+// Function to stop animations
+function stopAnimations1() {
+    clearTimeout(timer1); // Clear the timer to pause the slideshow
+    paused1 = true; // Set the paused flag to true
+}
+
+// Function to start the slideshow from the paused index
+function startSlideshow1() {
+    if (!paused1) return; // If not paused, do nothing
+    paused1 = false; // Reset the paused flag
+    showSlides1(); // Start the slideshow
+}
+// Function to stop animations
+function stopAnimations2() {
+    clearTimeout(timer2); // Clear the timer to pause the slideshow
+    paused2 = true; // Set the paused flag to true
+}
+
+// Function to start the slideshow from the paused index
+function startSlideshow2() {
+    if (!paused2) return; // If not paused, do nothing
+    paused2 = false; // Reset the paused flag
+    showSlides2(); // Start the slideshow
+}
+
+
+const clickableImages1 = document.querySelectorAll('.clickable-image1');
+    clickableImages1.forEach((image) => {
+      image.addEventListener('click', () => {
+        if (paused1) {
+          startSlideshow1();
+        } else {
+          stopAnimations1();
+        }
+      });
+    });
+    
+    const clickableImages2 = document.querySelectorAll('.clickable-image2');
+  clickableImages2.forEach((image) => {
+      image.addEventListener('click', () => {
+        if (paused2) {
+          startSlideshow2();
+        } else {
+          stopAnimations2();
+        }
+      });
+    });
+// Start the slideshow
+showSlides1();
+showSlides2();
+
+let color1 = document.querySelector(".slideshow-container1");
+let color2 = document.querySelector(".slideshow-container2");
+// color1.style.display = "none";
+color2.style.display = "none";
+function showcolor2() {
+  color1.style.display = "none";
+  color2.style.display = "block";
+}
+function showcolor1() {
+  color1.style.display = "block";
+  color2.style.display = "none";
+}
+
+    </script>
+</body>
+</html>
