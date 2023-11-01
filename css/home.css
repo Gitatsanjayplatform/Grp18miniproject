@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.navbar {
+  overflow: auto;
+  display: flex;
+  margin: 0px 124px;
+  height: 80px;
+}
+
+.logo {
+  width: 10%;
+  height: 50px;
+  margin-top: 10px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  text-align: center;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 0px 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar li button {
+  font-size: 27px;
+  padding: 3px 3px;
+  text-decoration: none;
+  align-items: center;
+  height: 100%;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 70;
+  font-family: "Teko", sans-serif;
+}
+.non_active:before {
+  background: #262626;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  background: rgb(11, 11, 117);
+}
+.non_active:hover {
+  background-position: 0;
+}
+.non_active:hover::before {
+  width: 100%;
+}
+.active {
+  border-bottom: 4px solid rgb(11, 11, 117);
+}
+.search {
+  float: right;
+  color: white;
+  position: absolute;
+  right: 134px;
+  top: 20px;
+}
+
+form.nosubmit {
+  border: none;
+  padding: 0;
+}
+input.nosubmit {
+  width: 242px;
+  border: 1px solid #030202;
+  border-radius: 20px;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 270px center;
+}
+input:focus{
+  border: none;
+  background-color: rgba(213, 213, 213, 0.362);
+}
+.container hr {
+  margin: 0px 80px;
+}
+
+.container {
+  height: 850px;
+  background-image: url("/img/background_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.m4 {
+  padding: 10px 90px;
+}
+.m4_spacing {
+  display: block;
+  margin: 200px 20px;
+}
+.m4_heading_space h4 {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.m4_heading {
+  font-weight: 500;
+  font-size: 56px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+.m4_button {
+  height: 50px;
+  width: 210px;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  background-color: transparent;
+  font-size: 15px;
+}
+.m4_button:hover {
+  box-shadow: inset 0 0 0 1px black;
+  color: black;
+  cursor: pointer;
+}
+.m4_button a {
+  text-decoration: none;
+  color: black;
+}
+.heading {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(4, 4, 4);
+  margin: 43px 30px;
+  display: block;
+  font-family: "Libre Baskerville", serif;
+}
+
+.service_options {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0px;
+  margin-bottom: 40px;
+}
+.service_option {
+  text-align: center;
+}
+.service_img {
+  margin: 5px 67px;
+  width: 75px;
+}
+
+.service_img img {
+  width: 100%;
+}
+.service_options h5 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+.option_button {
+  height: 50px;
+  width: 210px;
+  border: 2px solid black;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  background-color: transparent;
+  font-size: 19px;
+}
+.option_button a {
+  text-decoration: none;
+  color: black;
+}
+.option_button:hover {
+  background-color: #0000;
+  box-shadow: inset 0 0 0 1px black;
+  color: black;
+  cursor: pointer;
+}
+
+.best_car {
+  height: 500px;
+  background-image: url("/img/best car.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.best_car_spacing {
+  padding: 40px 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
+  display: block;
+}
+.best_car_heading {
+  font-weight: 500;
+  font-size: 56px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.best_car h5 {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: rgb(248, 246, 246);
+}
+.best_car_button {
+  height: 50px;
+  width: 210px;
+  border: 2px solid white;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+.best_car_button:hover {
+  /* background-color: #0000; */
+  box-shadow: inset 0 0 0 1px white;
+  color: white;
+  cursor: pointer;
+}
+.best_car_spacing div {
+  margin: 20px 0;
+}
+.best_car_button a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  max-height: 1000px;
+  height: 400px;
+  background-color: #e6e6e6;
+}
+footer hr {
+  margin: 0px 100px;
+}
+.footer_headings {
+  font-size: 19px;
+  color: #383c3a;
+}
+.footer_container {
+  height: 250px;
+  padding: 60px 30px;
+  display: block;
+}
+.footer_contactUs {
+  width: auto;
+  float: left;
+  padding-left: 40px;
+  padding-right: 140px;
+  color: #ddd;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
+}
+
+.footer_lists_options {
+  list-style: none;
+  font-size: small;
+}
+.footer_contact_list {
+  margin: 15px 0px;
+}
+.footer_contact_list a {
+  text-decoration: none;
+  color: #4a4f4c;
+}
+.footer_contact_list a:hover {
+  color: #4a4f4cce;
+}
+.footer_quickLinks {
+  width: auto;
+  float: left;
+  padding-left: 40px;
+  padding-right: 140px;
+  color: #ddd;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 62px;
+  left: 70px;
+  font-size: 20px;
+}
+.social_media {
+  position: absolute;
+  bottom: 62px;
+  right: 100px;
+}
+.social_list {
+  display: flex;
+}
+#insta {
+  margin: 0px 10px;
+  height: 30px;
+}
+    /* styles.css */
+
+/* ... your existing CSS rules ... */
+
+.search-container {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+
+#searchInput {
+  width: 340px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#searchResults {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#searchResults li {
+  margin: 0px 0;
+  cursor: pointer;
+}
+
+#searchResults a {
+  display: block;
+  width: 306px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7px 10px 8px 120px;
+  background-color: #f3f3f3;
+  /* border: 1px solid #ddd; */
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+#searchResults a:hover {
+  z-index: 1000000;
+  background-color: #e0e0e0;
+}
+

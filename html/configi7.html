@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW i7</title>
+    <link rel="stylesheet" href="/css/configinfo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #img_fit {
+background: url(/img/bmw\ i7\ bg.png);
+background-repeat: no-repeat;
+background-position-y: -15%;
+background-position-x: 27%;
+width: 75%;
+height: 100%;
+position: fixed;
+top: 10px;
+z-index: -1;
+background-position: center;
+    background-size: contain;
+}
+  </style>
+  </head>
+
+  <body>
+    <!-- <div class="container"> -->
+    <header>
+      <nav class="navbar">
+        <div class="navbar_container">
+          <div class="change_model_link_div">
+            <a href="buypg.html" class="change_model_link"> Change model </a>
+          </div>
+          <div class="navbar_options_container">
+            <div class="navbar_line_seperator"></div>
+            <div class="navbar_options">
+              <ul>
+                <li>
+                  <button
+                    class="navbar_buttons navbar_options_buttons"
+                    onclick="scrollToDivengine()"
+                  >
+                    Engines
+                  </button>
+                </li>
+                <!-- <li>
+                                <button class="navbar_buttons navbar_options_buttons">
+                                    Model Variant
+                                </button>
+                            </li> -->
+                <li>
+                  <button
+                    class="navbar_buttons navbar_options_buttons"
+                    onclick="scrollToDivexterior()"
+                  >
+                    Exterior
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="navbar_buttons navbar_options_buttons"
+                    onclick="scrollToDivinterior()"
+                  >
+                    Interior
+                  </button>
+                </li>
+                <li>
+                  <button
+                    id="360view"
+                    class="navbar_buttons navbar_options_buttons"
+                  >
+                    360° Exterior View
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <button id="openModalButton1" class="navbar_buttons summary_button">
+              <span>Summary</span>
+            </button>
+            <div class="navbar_line_seperator"></div>
+          </div>
+          <div class="extra_container">
+            <div class="logo">
+              <img src="/img/logobmw.png" alt="Error" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="scroll_container">
+      <div id="img_fit"></div>
+      <div class="info_container">
+        <div class="arrow">
+          <!-- <button id="left_arrow">
+                 <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button id="right_arrow">
+                 <i class="ri-arrow-right-s-line"></i>
+                </button> -->
+        </div>
+        <div class="engine_container">
+          <h3 class="info_headings">ENGINES</h3>
+          <div class="engine_details" id="engine1">
+            <h3 id="engine_variant">i7 xDrive60 M Sport
+</h3>
+            <p id="engine_type">Electric
+</p>
+            <p id="price">From ₹2,03,00,000
+</p>
+            <p id="engine_info_heading">Transmission</p>
+            <p id="engine_info">
+              Automatic
+            </p>
+            <div class="engine_options">
+              <!-- <div id="engine_down_button">
+                            <button id="down_button">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div> -->
+              <div id="engine_option">
+                <p>Transmission & Technical Data</p>
+              </div>
+            </div>
+            <div id="more_info">
+              <div class="extra_info">
+                <p class="engine_information_heading">Fuel type</p>
+                <p class="engine_information">Electric
+</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">System performance</p>
+                <p class="engine_information">400 kW (544 PS)</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Energy Consumption</p>
+                <p class="engine_information">N/A kWh/100 km</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Transmission</p>
+                <p class="engine_information">
+                  Automatic
+                </p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">
+                  Acceleration (0-100 kmh)
+                </p>
+                <p class="engine_information">4.7 sec</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">CO2 Emission</p>
+                <p class="engine_information">0 g/km</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Battery size (gross/net) </p>
+                <p class="engine_information">105.7 kWh / 101.7 kWh
+                </p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Charging time (AC, 0-100% SOC) </p>
+                <p class="engine_information">10.5 h</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Max. charging performance AC </p>
+                <p class="engine_information">11 kW</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Charging time (DC, 10-80% SOC) </p>
+                <p class="engine_information">34 min</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Max. charging performance DC </p>
+                <p class="engine_information">195 kW</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="engine_details" id="engine2">
+            <h3 id="engine_variant">X3 xDrive M40i</h3>
+            <p id="engine_type">Electric
+</p>
+            <p id="price">From ₹87,70,000</p>
+            <p id="engine_info_heading">Transmission</p>
+            <p id="engine_info">
+              Automatic
+            </p>
+            <div class="engine_options"> -->
+              <!-- <div id="engine_down_button">
+                            <button id="down_button">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div> -->
+              <!-- <div id="engine_option">
+                <p>Transmission & Technical Data</p>
+              </div>
+            </div>
+            <div id="more_info">
+              <div class="extra_info">
+                <p class="engine_information_heading">Fuel type</p>
+                <p class="engine_information">Electric
+</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">System performance</p>
+                <p class="engine_information">400 kW (544 PS)</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Energy Consumption</p>
+                <p class="engine_information">N/A kWh/100 km</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Transmission</p>
+                <p class="engine_information">
+                  Automatic
+                </p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">
+                  Acceleration (0-100 kmh)
+                </p> -->
+                <!-- <p class="engine_information">4.7 sec</p> -->
+              <!-- </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">CO2 Emission</p>
+                <p class="engine_information">0 g/km</p>
+              </div>
+            </div>
+          </div>
+          <div class="engine_details" id="engine3">
+            <h3 id="engine_variant">X3 xDrive20d M Sport</h3>
+            <p id="engine_type">Petrol</p>
+            <p id="price">From ₹71,90,000</p>
+            <p id="engine_info_heading">Transmission</p>
+            <p id="engine_info">
+              8-Speed Steptronic Sport Automatic Transmission
+            </p> -->
+            <!-- <div class="engine_options"> -->
+              <!-- <div id="engine_down_button">
+                            <button id="down_button">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div> -->
+              <!-- <div id="engine_option">
+                <p>Transmission & Technical Data</p>
+              </div>
+            </div>
+            <div id="more_info">
+              <div class="extra_info">
+                <p class="engine_information_heading">Fuel type</p>
+                <p class="engine_information">Petrol</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Engine performance</p>
+                <p class="engine_information">N/A kW (N/A PS)</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Consumption</p>
+                <p class="engine_information">10.49 km/liter</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">Transmission</p>
+                <p class="engine_information">
+                  8-Speed Steptronic Sport Automatic Transmission
+                </p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">
+                  Acceleration (0-100 kmh)
+                </p>
+                <p class="engine_information">4.9 sec</p>
+              </div>
+              <div class="extra_info">
+                <p class="engine_information_heading">CO2 Emission</p>
+                <p class="engine_information">216.8 g/km</p> -->
+              <!-- </div>
+            </div>
+          </div> -->
+          <div class="engine_selection">
+            <label class="select_container">
+              i7 xDrive60 M Sport
+              <input
+                type="radio"
+                value="i7 xDrive60 M Sport"
+                name="engineoptionradio"
+                checked="checked"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <label class="select_container"
+              >X3 xDrive M40i
+              <input
+                type="radio"
+                value="X3 xDrive M40i"
+                name="engineoptionradio"
+              />
+              <span class="checkmark"></span>
+            </label>
+            <label class="select_container"
+              >X3 xDrive20d M Sport
+              <input
+                type="radio"
+                value="X3 xDrive20d M Sport"
+                name="engineoptionradio"
+              />
+              <span class="checkmark"></span>
+            </label> -->
+          </div>
+        </div>
+        <hr />
+        <div class="Exterior_container">
+          <div>
+            <h3 class="info_headings">EXTERIOR</h3>
+          </div>
+          <div class="Exterior_details">
+            <div class="Exterior_paint_details">
+              <p>PAINT</p>
+              <div class="engine_selection">
+                <label class="select_container">
+                  color 1
+                  <input
+                    type="radio"
+                    value="color 1"
+                    checked="checked"
+                    name="exterioroptionradio"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="select_container"
+                  >color 2
+                  <input
+                    type="radio"
+                    value="color 2"
+                    name="exterioroptionradio"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="all_type_engines">
+                <button id="engines" class="exteriorview">
+                  View all Exterior
+                </button>
+              </div>
+              <!-- <div class="Exterior_paint_list">
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                        </div> -->
+            </div>
+            <div>
+              <p>RIMS</p>
+              <div class="rims_info">
+                <p>
+                  For information about the tyre labelling, refer to the
+                  technical data on the vehicle-specific information page.
+                </p>
+              </div>
+              <div>
+                <img />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="Interior_container">
+          <div>
+            <h3 class="info_headings">INTERIOR</h3>
+          </div>
+          <div>
+            <div class="Interior_details">
+              <p>UPHOLSTERY</p>
+              <div class="engine_selection">
+                <label class="select_container">
+                  interior 1
+                  <input
+                    type="radio"
+                    value="interior 1"
+                    checked="checked"
+                    name="interioroptionradio"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="select_container"
+                  >interior 2
+                  <input
+                    type="radio"
+                    value="interior 2"
+                    name="interioroptionradio"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="all_type_engines">
+                <button id="engines" class="en">View all Interior</button>
+              </div>
+              <!-- <div class="Upholstery_type">
+                            <div>
+                                <img>
+                            </div>
+                            <div>
+                                <img>
+                            </div>
+                        </div> -->
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="config">
+          <div id="CONFIGURATION">
+            <h3>YOUR CONFIGURATION IS READY!</h3>
+          </div>
+          <div id="model_price">
+            <p id="model" class="enginename1">i7 xDrive60 M Sport
+
+
+</p>
+            <div id="price">
+              <h3 id="outputprice">
+                ₹2,03,00,000
+
+              </h3>
+              <i class="ri-information-line" id="icon1"></i>
+              <span class="tooltip1">Price prevailing at the time of invoicing will be applicable. Ex-showroom prices inclusive of GST (incl. compensation cess) as applicable but excludes Road Tax, Tax Collected at Source (TCS), RTO, statutory taxes/fees, other local tax/cess levies and Insurance. Prices and options are subject to change without prior notice. For further information, please contact your local Authorised BMW Dealer.</span>
+            </div>
+          </div>
+          <hr />
+          <div id="Summary">
+                        <button id="openModalButton2"><i class="ri-file-2-line"></i>Summary</button>
+
+          </div>
+          <div class="testdrive">
+              <button id="senddatabutton">Test Drive</button>
+          </div>
+          <div class="testdrive">
+            <button id="book" class="opensliderbutton">BOOK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="lower_navbar">
+      <div class="Model">
+        <h3 id="enginename">i7 xDrive60 M Sport
+
+
+</h3>
+      </div>
+      <div id="lower_summary">
+        <div id="lower_price">
+          <p id="output">₹2,03,00,000
+</p>
+          <i class="ri-information-line" id="icon"></i>
+           <span class="tooltip">Price prevailing at the time of invoicing will be applicable. Ex-showroom prices inclusive of GST (incl. compensation cess) as applicable but excludes Road Tax, Tax Collected at Source (TCS), RTO, statutory taxes/fees, other local tax/cess levies and Insurance. Prices and options are subject to change without prior notice. For further information, please contact your local Authorised BMW Dealer.</span>
+        </div>
+      </div>
+    </nav>
+    <footer>
+      <div id="copyright">© Make Your BMW 2023</div>
+      <div class="footer_options">
+        <ul>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="#">Data Privacy</a>
+          </li>
+          <li>
+            <a href="#">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="overlay" id="overlay">
+      <div class="modal">
+        <button id="mybutton"><span>&times;</span></button>
+
+        <div class="slideshow-container">
+          <div class="header">
+            <ul>
+              <li>
+                <button class="exteriorbuttonoption" onclick="showcolor1()">
+                  Exterior
+                </button>
+              </li>
+              <li>
+                <button class="exteriorbuttonoption" onclick="showcolor2()">
+                  optional color
+                </button>
+              </li>
+            </ul>
+            <hr />
+          </div>
+
+          <div class="slideshow-container1">
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="tab to pause / resume"
+                style="margin-bottom: 60px"
+                src="X1_view1.png"
+              />
+            </div>
+
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                src="X1_view2.png"
+                style="margin-top: 100px"
+              />
+            </div>
+
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                src="X1_view3.png"
+              />
+            </div>
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                src="X1_view4.png"
+                style="margin-top: 100px"
+              />
+            </div>
+
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                src="X1_view5.png"
+                style="z-index: -1"
+              />
+            </div>
+
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                src="X1_view6.png"
+                style="margin-top: 100px"
+              />
+            </div>
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                style="padding: 0px 0px 35px 10px"
+                src="X1_view7.png"
+              />
+            </div>
+
+            <div class="mySlides1">
+              <img
+                class="clickable-image1"
+                title="Tab to pause / resume"
+                src="X1_view8.png"
+                style="margin-top: 100px"
+              />
+            </div>
+          </div>
+          <!-- </li>
+          <li> -->
+          <div class="slideshow-container2">
+            <div class="mySlides2">
+              <img
+                class="clickable-image2"
+                title="tab to pause / resume"
+                style="height: 20%"
+                src="Series_2_Model_220d.png"
+              />
+            </div>
+
+            <div class="mySlides2">
+              <img
+                class="clickable-image2"
+                title="Tab to pause / resume"
+                src="SeriesXModelX7.png"
+              />
+            </div>
+
+            <div class="mySlides2">
+              <img
+                class="clickable-image2"
+                title="Tab to pause / resume"
+                style="padding: 0px 10px 30px 0px"
+                src="SeriesXModelX5.png"
+              />
+            </div>
+            <div class="mySlides2">
+              <img
+                class="clickable-image2"
+                title="Tab to pause / resume"
+                src="SeriesModel220d.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlayen">
+      <div class="modal" id="modalen">
+        <button class="close-button" id="mybutton"><span>&times;</span></button>
+        <nav>
+          <div class="header">
+            <ul>
+              <li>
+                <button class="interiorbuttonoption" onclick="showcolor3()">
+                  Interior
+                </button>
+              </li>
+              <li>
+                <button class="interiorbuttonoption" onclick="showcolor4()">
+                  optional color
+                </button>
+              </li>
+            </ul>
+            <hr />
+          </div>
+        </nav>
+        <div class="slideshow-container3">
+          <div class="mySlides3">
+            <img
+              class="clickable-image3"
+              title="tab to pause / resume"
+              style="margin-bottom: 60px"
+              src="X1_view1.png"
+            />
+          </div>
+
+          <div class="mySlides3">
+            <img
+              class="clickable-image3"
+              title="Tab to pause / resume"
+              src="X1_view2.png"
+              style="margin-top: 100px"
+            />
+          </div>
+
+          <div class="mySlides3">
+            <img
+              class="clickable-image3"
+              title="Tab to pause / resume"
+              src="X1_view3.png"
+            />
+          </div>
+          <div class="mySlides3">
+            <img
+              class="clickable-image3"
+              title="Tab to pause / resume"
+              src="X1_view4.png"
+              style="margin-top: 100px"
+            />
+          </div>
+        </div>
+        <!-- </li>
+        <li> -->
+        <div class="slideshow-container4">
+          <div class="mySlides4">
+            <img
+              class="clickable-image4"
+              title="tab to pause / resume"
+              style="height: 20%"
+              src="X1_view4.png"
+            />
+          </div>
+
+          <div class="mySlides4">
+            <img
+              class="clickable-image4"
+              title="Tab to pause / resume"
+              src="X1_view3.png"
+            />
+          </div>
+
+          <div class="mySlides4">
+            <img
+              class="clickable-image4"
+              title="Tab to pause / resume"
+              style="padding: 0px 10px 30px 0px"
+              src="X1_view2.png"
+            />
+          </div>
+          <div class="mySlides4">
+            <img
+              class="clickable-image4"
+              title="Tab to pause / resume"
+              src="X1_view1.png"
+            />
+          </div>
+        </div>
+        <!-- <img id="clickable-image1" src="Series_7_Model_740Li.png" alt="Image" /> -->
+      </div>
+    </div>
+    <!-- <button id="en">interior</button> -->
+
+    <div class="formslider" id="infoformslider">
+        <div class="formslider_content">
+          
+        <!-- Content for your information formslider -->
+
+        <form id="orderform">
+          <h2>Information Form</h2>
+          <div class="firstPart_book">
+            <div class="input_group">
+              <input
+              id="firstname"
+                type="text"
+                name="first name"
+                class="input_group_input"
+                required
+              />
+              <label for="First Name" class="input_group_label"
+                >First Name</label
+              >
+            </div>
+            <div class="input_group">
+              <input
+              id="secondname"
+                type="text"
+                name="second name"
+                class="input_group_input"
+                required
+              />
+              <label for="Second Name" class="input_group_label"
+                >Second Name</label
+              >
+            </div>
+            <div class="input_group">
+              <input
+              id="email"
+                type="text"
+                name="email id"
+                class="input_group_input"
+                required
+              />
+              <label for="Email" class="input_group_label">Email address</label>
+            </div>
+          </div>
+          <div class="input_group mobile">
+            <input
+            id="mobile"
+              type="text"
+              name="mobile no."
+              class="input_group_input"
+              required
+            />
+            <label for="Mobile no." class="input_group_label">Mobile No.</label>
+          </div>
+          <h2><i class="ri-map-pin-2-fill"></i> Location</h2>
+          <div class="firstPart_book">
+            <div class="input_group">
+              <input
+              id="address"
+                type="text"
+                name="Address"
+                class="input_group_input address"
+                required
+              />
+              <label for="Address" class="input_group_label">Address</label>
+            </div>
+            <div class="form-group col-md-4 input_group">
+              <!-- <label for="inputState" class="input_group_label">State</label> -->
+              <select class="form-control input_group_input" id="inputState">
+                <option value="SelectState">Select State</option>
+                <option value="Andra Pradesh">Andra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madya Pradesh">Madya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Orissa">Orissa</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttaranchal">Uttaranchal</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <!-- <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option> -->
+                <option value="Delhi">Delhi</option>
+                <!-- <option value="Lakshadeep">Lakshadeep</option>
+                                <option value="Pondicherry">Pondicherry</option> -->
+              </select>
+            </div>
+            <div class="form-group col-md-4 input_group">
+              <!-- <label for="inputDistrict">District</label> -->
+              <select class="form-control input_group_input" id="inputDistrict">
+                <option value="default">-- Select District --</option>
+              </select>
+            </div>
+          </div>
+          <div class="book_button">
+            <button  type="submit" id="booking">Place Your Order</button>
+          </div>
+        </div>
+        </form>
+        <button id="closesliderbutton"><i class="ri-close-line"></i></button>
+      </div>
+    
+      <div id="MODAL" class="MODAL1">
+        <div class="modal-content">
+          <h2 id="sum">Summary</h2>
+          <span class="close" id="closeModalButton">&times;</span><br>
+          <hr>
+          <table border="0">
+            <div class="space">
+                    <td style="font-weight: bold; font-size: 23px;" colspan="1">Specifications</td>
+                    <td style="font-weight: bold; font-size: 22px;" class="corner">Amount</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Car variant </td>
+                    <td id="car_variant">:&nbsp;i7 xDrive60 M Sport
+
+
+</td>
+                    <td class="corner" id="engineamount">₹2,03,00,000
+</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Exterior color </td>
+                    <td id="car_exterior_color">:&nbsp;color1</td>
+                    <td class="corner" id="exterioramount">₹0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Interior type </td>
+                    <td id="car_interior_color">:&nbsp;interior1</td>
+                    <td class="corner" id="interioramount">₹0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Rims </td>
+                    <td>:&nbsp;&nbsp;default</td>
+                    <td class="corner">₹0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Total Additional charges </td>
+                    <td class="corner" id="car_additional_charges">₹0</td>
+                  </tr>
+                </div>
+              </table>
+                <hr>
+                <div class="space">
+                  <span style="font-weight: bold; font-size: 20px;" colspan="2">Total Amount :</span>
+                  <span style="font-weight: bold; position: absolute; right: 28px; font-size: 20px;" id="car_Amount" class="corner">₹2,03,00,000
+</span>
+                </div>
+        </div>
+      </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/configi7.js">
+    </script>
+  </body>
+</html>

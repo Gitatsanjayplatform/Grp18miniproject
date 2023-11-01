@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  cursor: pointer;
+}
+#logo {
+  margin: 12px 21px;
+  text-align: center;
+}
+
+#logo img {
+  height: 61px;
+  margin: 0px 26px 0px 21px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+#navbar ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.7rem;
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+#navbar ul li a {
+  /* display: block; */
+  padding: 3px 28px;
+  text-decoration: none;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  font-family: "Teko", sans-serif;
+}
+#navbar ul li a {
+  background-image: linear-gradient(
+    to right,
+    rgb(42, 42, 255),
+    rgb(42, 42, 255) 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:before {
+  content: "";
+  background: rgb(11, 11, 117);
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+  background-position: 0;
+}
+
+#navbar ul li a:hover::before {
+  width: 100%;
+}
+
+.testDrivePhoto img {
+  height: auto;
+  width: auto;
+  max-width: 1519px;
+}
+
+#container {
+  height: auto;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 140px;
+  padding: 6px 166px;
+  text-align: center;
+}
+.first_section_form {
+  text-align: left;
+}
+.first_box_form {
+  display: flex;
+}
+
+#heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.form_control {
+  display: block;
+  border-radius: 4px;
+  padding: 6px 12px;
+  margin-bottom: 20px;
+  color: #555;
+  border: 1px solid #ccc;
+  height: 26px;
+  font-size: 13px;
+}
+.title {
+  width: 80px;
+  margin-right: 10px;
+  height: 39px;
+}
+.title:hover {
+  cursor: pointer;
+  box-shadow: rgb(42, 42, 255);
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(42, 42, 255);
+  box-shadow: 0 0 10px rgb(42, 42, 255);
+}
+select:focus {
+  outline: none;
+  border-color: rgb(42, 42, 255);
+  box-shadow: 0 0 10px rgb(42, 42, 255);
+}
+.firstname {
+  margin-right: 10px;
+  width: 182px;
+}
+.lastname {
+  margin-right: 10px;
+  width: 182px;
+}
+.email {
+  width: 182px;
+}
+.mobile {
+  width: 182px;
+  margin-right: 10px;
+}
+.prefferedmodel {
+  width: 225px;
+  margin-right: 10px;
+  height: 39px;
+}
+.conditions {
+  text-align: left;
+  margin: 20px 0px;
+}
+
+button {
+  display: block;
+  height: 35px;
+  margin: 20px 0px;
+  background-color: rgb(42, 42, 255);
+  color: white;
+  width: 106px;
+  border: 0px;
+  text-align: left;
+  padding-left: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(11, 11, 117);
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 119px;
+  left: 264px;
+  width: 60%;
+  height: 50%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1111110;
+  font-family: "Montserrat", sans-serif;
+  padding: 40px;
+}
+
+/* Modal Content */
+.modal img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+.modal h2 {
+  margin-bottom: 15px;
+}
+.modal a {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+#redirection {
+  align-items: center;
+  display: inline-flex;
+  text-align: center;
+  padding-left: 40px;
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.766);
+  /* Adjust the alpha (last) value for opacity */
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  /* Add a blur effect to the content behind the overlay */
+}
+.content {
+  text-align: left;
+  font-family: "Teko", sans-serif;
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+#salesNav {
+  height: auto;
+  max-height: 67.4px;
+  text-align: center;
+  border-top: 1px solid rgba(144, 138, 138, 0.711);
+}
+
+.salesNav_strip {
+  list-style: none;
+  margin: 0px auto;
+  display: flex;
+  width: 100%;
+  max-width: 637px;
+}
+.shopping_link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #302e2e;
+  text-decoration: none;
+  font-size: 15px;
+  width: 159.99px;
+  text-align: center;
+}
+
+.sticky_navbar_icons {
+  height: 30px;
+}
+
+.salesNav_img_sales {
+  margin-top: -2px;
+  border-top: 5px;
+  border-top-width: 5px;
+  border-top-style: solid;
+  border-top-color: transparent;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  display: inline-block;
+  list-style: none;
+  width: 159.99px;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  max-height: 1000px;
+  height: 500px;
+  background-color: #e6e6e6;
+}
+footer hr {
+  margin: 0px 100px;
+}
+.footer_headings {
+  font-size: 19px;
+  color: #383c3a;
+}
+.footer_container {
+  height: 200px;
+  padding: 60px 30px;
+  display: block;
+}
+.footer_contactUs {
+  width: auto;
+  float: left;
+  padding-left: 40px;
+  padding-right: 140px;
+  color: #ddd;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
+}
+
+.footer_lists_options {
+  list-style: none;
+  font-size: small;
+}
+.footer_contact_list {
+  margin: 15px 0px;
+}
+.footer_contact_list a {
+  text-decoration: none;
+  color: #4a4f4c;
+}
+.footer_contact_list a:hover {
+  color: #4a4f4cce;
+}
+.footer_quickLinks {
+  width: auto;
+  float: left;
+  padding-left: 40px;
+  padding-right: 140px;
+  color: #ddd;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 62px;
+  left: 70px;
+  font-size: 20px;
+}
+.social_media {
+  position: absolute;
+  bottom: 62px;
+  right: 100px;
+}
+.social_list {
+  display: flex;
+}
+#insta {
+  margin: 0px 10px;
+}
+#modalinfouser {
+  margin-left: 363px;
+}

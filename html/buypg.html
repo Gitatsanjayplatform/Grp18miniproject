@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeyourBMW-Buy</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/buypg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">       
+</head>
+
+<body>
+
+    <div id="navbar_section">
+        <nav id="navbar">
+            <div id="logo">
+                <img src="/img/logobmw.png" alt="car_logo">
+                <!-- <p>MakeYourBMW</p> -->
+            </div>
+            <ul >
+                <li class="options" ><a class="non_active" href="home.html">Home</a></li>
+                <li class="options buy_active"><a style="color: rgb(42, 42, 255);" href="buy.html">Models</a></li>
+                <!-- <li class="options"><a class="non_active" href="#">Configration</a></li> -->
+                <li class="options"><a class="non_active" href="about.html">About us</a></li>
+                <li class="options"><a class="non_active" href="contact.html">Contact us</a></li>
+    
+            </ul>
+        </nav>
+        <hr>
+    </div>
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="/img/Series 2 Model 220i.jpg" alt="Series 2 Model 220i">
+            </div>
+            <div class="item">
+                <img src="/img/Series 7 Model 740Li.jpg" alt="Series 7 Model 740Li">
+            </div>
+            <div class="item">
+                <img src="/img/Series i model ix.jpg" alt="Series i model ix">
+            </div>
+            <div class="item">
+                <img src="/img/Series m Model M2.jpg" alt="Series m Model M2">
+            </div>
+            <div class="item">
+                <img src="/img/Series x Model X1.jpg" alt="Series x Model X1">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <div class="selection">
+        <div class="container">
+            <div id="title">
+                <button onclick="show()" id="h1" >All Models</button>
+            </div>
+            <div class="firstPart">
+                <ul>
+                    <li>
+                        <button onclick="showModel1()" class="firstTab"><strong>X</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel2()" class="firstTab"><strong>M</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel3()" class="firstTab"><strong>i</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel4()" class="firstTab"><strong>2</strong></button>
+                    </li>
+                    <li>
+                        <button onclick="showModel5()" class="firstTab"><strong>7</strong></button>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="All_models">
+                <div class="models" id="series1">
+                    <h2 id="model_heading">X</h2>
+                    <div class="model_details">
+                        <div class="model_info" >
+                            <div class="modal" id="modal1">
+                                <div>
+                                    <span class="close-button" id="close-button1">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/x1 modal removebg-preview.png" alt="Image">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW X1</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹4,890,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configx1.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_X_Model_X1.png"  id="X1" alt="Series_X_Model_X1" class="model_images">
+                            <h3>BMW X1</h3>
+                            <p>Starting from ₹4,590,000</p>
+                        </div>
+                        <div class="model_info" >
+                            <div class="modal" id="modal2">
+                                <div class="modal_image">
+                                    <span class="close-button" id="close-button2">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/x3 modal removebg-preview.png" alt="Image" style="position: relative; top: 26px;">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW X3</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹6,850,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configx3.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_X_Model_X3.png" id="X3"alt="Series_X_Model_X3" class="model_images">
+                            <h3>BMW X3</h3>
+                            <p>Starting from ₹6,850,000</p>
+                        </div>
+                        <div class="model_info" >
+                            <div class="modal" id="modal3">
+                                <div>
+                                    <span class="close-button" id="close-button3">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/x5 modal-removebg-preview.png" alt="Image">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW X5</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹9,520,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configx5.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_X_Model_X5.png" id="X5" alt="Series_X_Model_X5" class="model_images">
+                            <h3>BMW X5</h3>
+                            <p>Starting from ₹9,520,000</p>
+                        </div>
+                        <div class="model_info" >
+                            <div class="modal" id="modal4">
+                                <div>
+                                    <span class="close-button" id="close-button4">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/x7 modal removebg-preview.png" alt="Image">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW X7</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹12,370,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configx7.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_X_Model_X7.png" id="X7" alt="Series_X_Model_X7" class="model_images">
+                            <h3>BMW X7</h3>
+                            <p>Starting from ₹12,370,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series2">
+                    <h2 id="model_heading">M</h2>
+                    <div class="model_details">
+                        <div class="model_info" >
+                            <div class="modal" id="modal5">
+                               <div>
+                                    <span class="close-button" id="close-button5">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/m2 modal-removebg-preview.png" alt="Image">
+                               </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW M2</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹9,800,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configm2.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_2_Model_220d.png" id="M2" alt="Series_m_Model_m2" class="model_images">
+                            <h3>BMW M2</h3>
+                            <p>Starting from ₹9,800,000</p>
+                        </div>
+                        <div class="model_info">
+                            <div class="modal" id="modal6">
+                                <div>
+                                    <span class="close-button" id="close-button6">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/m4 modal removebg-preview.png"  alt="Image" style="width: 55%;">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW M4</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹14,750,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configm4.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_m_Model_m4.png"  id="M4" alt="Series_m_Model_m4" class="model_images">
+                            <h3>BMW M4</h3>
+                            <p>Starting from ₹14,750,000</p>
+                        </div>
+                        <div class="model_info">
+                            <div class="modal" id="modal7">
+                                <div>
+                                    <span class="close-button" id="close-button7">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/m8 modal removebg-preview.png" alt="Image" style="margin-top: 20px;">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW M8</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹24,400,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configm8.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_m_Model_m8.png" id="M8" alt="Series_m_Model_m8" class="model_images" >
+                            <h3>BMW M8</h3>
+                            <p>Starting from ₹24,400,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series3">
+                    <h2 id="model_heading">i</h2>
+                    <div class="model_details">
+                        <div class="model_info">
+                            <div class="modal" id="modal8">
+                                <div>
+                                    <span class="close-button" id="close-button8">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/i4 modal-removebg-preview.png" alt="Image" style="width: fit-content;">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW i4</p>
+                                        <p id="modal_type">Full Electric</p>
+                                        <p id="modal_price">Starting from ₹7,250,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configi4.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_i_Model_i4.png" id="i4" alt="Series_i_Model_i4" class="model_images">
+                            <br>
+                            <img src="/imgbuy/BMW-i-Logo-768x432.png" id="name_logo">
+                            <h3>BMW i4</h3>
+                            <p>Starting from ₹7,250,000</p>
+                        </div>
+                        <div class="model_info" >
+                            <div class="modal" id="modal9">
+                                <div>
+                                    <span class="close-button" id="close-button9">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/bmw i7 modal-removebg-preview.png" alt="Image">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW i7</p>
+                                        <p id="modal_type">Full Electric</p>
+                                        <p id="modal_price">Starting from ₹20,300,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configi7.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_i_Model_i7.png"id="i7" alt="Series_i_Model_i7" class="model_images">
+                            <br>
+                            <img src="/imgbuy/BMW-i-Logo-768x432.png" id="name_logo">
+                            <h3>BMW i7</h3>
+                            <p>Starting from ₹20,300,000</p>
+                        </div>
+                        <div class="model_info" >
+                            <div class="modal" id="modal10">
+                                <div>
+                                    <span class="close-button" id="close-button10">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/bmw ix modal-removebg-preview.png" alt="Image" style="margin-top: 60px;">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW ix</p>
+                                        <p id="modal_type">Full Electric</p>
+                                        <p id="modal_price">Starting from ₹12,100,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configix.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_i_Model_ix.png" id="ix" alt="Series_i_Model_ix" class="model_images">
+                            <br>
+                            <img src="/imgbuy/BMW-i-Logo-768x432.png" id="name_logo">
+                            <h3>BMW ix</h3>
+                            <p>Starting from ₹12,100,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series4">
+                    <h2 id="model_heading">2</h2>
+                    <div class="model_details">
+                        <div class="model_info" >
+                            <div class="modal" id="modal11">
+                                <div>
+                                    <span class="close-button" id="close-button11">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/220d modal removebg-preview.png" alt="Image" style="margin-top: 60px;">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW 220i</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹4,350,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="config220d.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_2_Model_220d.png" id="220d" alt="Series_2_Model_220d" class="model_images">
+                            <h3>BMW 220i</h3>
+                            <p>Starting from ₹4,350,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="models" id="series5">
+                    <h2 id="model_heading">7</h2>
+                    <div class="model_details">
+                        <div class="model_info" >
+                            <div class="modal" id="modal12">
+                                <div>
+                                    <span class="close-button" id="close-button12">&times;</span>
+                                    <img id="modal-image" src="/imgbuy/bmw g70 modal-removebg-preview.png" alt="Image">
+                                </div>
+                                <!-- <div class="modal_info"> -->
+                                    <div class="modal_headings">
+                                        <p id="modal_heading">BMW 7</p>
+                                        <p id="modal_type">Petrol</p>
+                                        <p id="modal_price">Starting from ₹17,800,000</p>
+                                    </div>
+                                    <div class="modal_button">
+                                        <a href="configG70.html">
+                                            <button>
+                                                Configure & Price
+                                            </button>
+                                        </a>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                            <img src="/imgbuy/Series_7_Model_740Li.png" id="740Li" alt="Series_7_Model_740Li" class="model_images">
+                            <h3>BMW 7</h3>
+                            <p>Starting from ₹17,800,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_details">
+                <div class="footer_contactUs">
+                    <h4 class="footer_headings">
+                        Contact Us
+                    </h4>
+                    <ul class="footer_lists_options">
+                        <li class="footer_contact_list">
+                            <a href="about.html">
+                                <strong>
+                                    Find a Dealer
+                                </strong>
+                            </a>
+                        </li>
+                        <li class="footer_contact_list">
+                            <a href="testdrive.html">
+                                <strong>
+                                    Request a test drive
+                                </strong>
+                            </a>
+                        </li>
+                        <li class="footer_contact_list">
+                            <a href="contact.html">
+                                <strong>
+                                    Contact Us
+                                </strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_quickLinks">
+                    <h4 class="footer_headings">
+                        Quick Links
+                    </h4>
+                    <ul class="footer_lists_options">
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>© MakeYourBMW</p>
+        </div>
+        <div class="social_media">
+            <ul id="social_list">
+                <li style=" list-style: none;">
+                    <img src="/img/logo-instagram.png" alt="insta logo" id="insta">
+                    <img src="/img/facebook-logo.png" alt="facebook logo" id='insta'>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/js/buypg.js"> </script>
+</body>
+</html>
+</body>
+</html>
