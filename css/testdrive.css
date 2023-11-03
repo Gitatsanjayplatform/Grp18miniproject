@@ -124,7 +124,9 @@ input {
   cursor: pointer;
   box-shadow: rgb(42, 42, 255);
 }
-
+select{
+  cursor: pointer;
+}
 input:focus {
   outline: none;
   border-color: rgb(42, 42, 255);
@@ -182,6 +184,7 @@ button:hover {
 .modal {
   display: none;
   position: fixed;
+  border-radius: 4px;
   top: 119px;
   left: 264px;
   width: 60%;

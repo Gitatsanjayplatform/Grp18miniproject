@@ -76,7 +76,8 @@ header {
   display: inline;
 }
 .contact_pic {
-  background: url(/img/road.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/road.jpg);
   background-position: center;
   background-color: #0000007c;
   background-repeat: no-repeat;
